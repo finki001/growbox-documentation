@@ -1,0 +1,17 @@
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material
+    volumes:
+      - ./:/docs
+    networks:
+      proxy-tier:
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      - traefik.http.services.growboxdoc.loadbalancer.server.port=8000
+      - traefik.http.routers.growboxdoc.rule=HostRegexp(`{mkdocs:growboxdoc.*}`)
+
+networks:
+  proxy-tier:
+    external:
+      name: traefik
