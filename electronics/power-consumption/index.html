@@ -910,6 +910,27 @@
 
 
 <h1 id="power-consumption">Power consumption</h1>
+<p>I'm using a smart plug that supports measuring the total power consumption of the grow setup and is also Tasmota compatible:
+<a href="https://www.amazon.de/gp/product/B0054PSIPA/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;th=1">Tasmota Steckdose NOUS A1T</a></p>
+<p>An example payload would look like this:</p>
+<pre><code>{
+  &quot;Time&quot;: &quot;2024-07-24T22:24:32&quot;,
+  &quot;ENERGY&quot;: {
+    &quot;TotalStartTime&quot;: &quot;2024-01-04T15:00:40&quot;,
+    &quot;Total&quot;: 279.919,
+    &quot;Yesterday&quot;: 2.499,
+    &quot;Today&quot;: 2.29,
+    &quot;Period&quot;: 11,
+    &quot;Power&quot;: 126,
+    &quot;ApparentPower&quot;: 178,
+    &quot;ReactivePower&quot;: 125,
+    &quot;Factor&quot;: 0.71,
+    &quot;Voltage&quot;: 296,
+    &quot;Current&quot;: 0.601
+  }
+}
+</code></pre>
+<p><code>// TODO: add details how much energy the system consumes in different modes (veg/bloom, aero cloner running or not)</code></p>
 
 
 
