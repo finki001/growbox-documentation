@@ -15,3 +15,12 @@ I use [this](https://www.amazon.de/dp/B0C7ZW6SPN?ref=ppx_yo2ov_dt_b_product_deta
   ![Screenshot](../img/klemme3.jpg)
 - Distribute 5V/GND: [1 in, 5 out](https://www.amazon.de/gp/product/B0BF9411SV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
   ![Screenshot](../img/klemme4.jpg)
+- 230VAC in: [Power plug terminal](https://www.amazon.de/gp/product/B074PS1L3V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
+
+# JST/Dupont connectors
+For the sensors and other devices that require 5V we will use JST/Dupont connectors. This [box](https://www.amazon.de/gp/product/B07ZKDTY4V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) should be enough for the beginning.
+Also consider getting a few meters of [ribbon cable](https://www.amazon.de/dp/B09R42ZGQD?psc=1&ref=ppx_yo2ov_dt_b_product_details) to connect all the low voltage peripherals.
+
+# DC sockets (5.5mm x 2.1mm)
+To connect the lights and the ventilation we will use [DC sockets](https://www.amazon.de/dp/B09WY3GPD4?psc=1&ref=ppx_yo2ov_dt_b_product_details) that are connected to the relais
+![DC Socket](../img/dcsocket.png)
