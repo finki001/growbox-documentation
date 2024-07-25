@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://finki001.github.io/growbox-documentation/electronics/converters/ac-dc/">
+        <link rel="canonical" href="https://finki001.github.io/growbox-documentation/nutrients-and-measurement/">
       
       
-        <link rel="prev" href="../../wiring/">
+        <link rel="prev" href="../electronics/converters/dc-dc/">
       
       
-        <link rel="next" href="../dc-dc/">
+        <link rel="next" href="a-fertilizer/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>AC-DC Converter - Growbox Documentation</title>
+        <title>pH/EC measurement - Growbox Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ac-dc-converter" class="md-skip">
+        <a href="#phec-measurement" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Growbox Documentation" class="md-header__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
+    <a href=".." title="Growbox Documentation" class="md-header__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AC-DC Converter
+              pH/EC measurement
             
           </span>
         </div>
@@ -187,7 +187,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Growbox Documentation" class="md-nav__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
+    <a href=".." title="Growbox Documentation" class="md-nav__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -217,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -234,19 +234,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -260,7 +258,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Electronics
@@ -274,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../electronics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lights/" class="md-nav__link">
+      <a href="../electronics/lights/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../power-consumption/" class="md-nav__link">
+      <a href="../electronics/power-consumption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -337,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relais-and-switches/" class="md-nav__link">
+      <a href="../electronics/relais-and-switches/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -358,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sensors/" class="md-nav__link">
+      <a href="../electronics/sensors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tasmota-rules/" class="md-nav__link">
+      <a href="../electronics/tasmota-rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wiring/" class="md-nav__link">
+      <a href="../electronics/wiring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -418,19 +416,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
         
           
           <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
@@ -444,7 +440,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             Converters
@@ -455,19 +451,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../electronics/converters/ac-dc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,7 +463,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -489,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dc-dc/" class="md-nav__link">
+      <a href="../electronics/converters/dc-dc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,17 +508,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -546,7 +534,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Nutrients and measurement
@@ -557,10 +545,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../nutrients-and-measurement/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -569,6 +566,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -581,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nutrients-and-measurement/a-fertilizer/" class="md-nav__link">
+      <a href="a-fertilizer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -602,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nutrients-and-measurement/additives/" class="md-nav__link">
+      <a href="additives/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -665,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../plant-setup/" class="md-nav__link">
+      <a href="../plant-setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../plant-setup/hydro/" class="md-nav__link">
+      <a href="../plant-setup/hydro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/" class="md-nav__link">
+      <a href="../software/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/grafana/" class="md-nav__link">
+      <a href="../software/grafana/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/influxdb/" class="md-nav__link">
+      <a href="../software/influxdb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/mosquitto/" class="md-nav__link">
+      <a href="../software/mosquitto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/node-red/" class="md-nav__link">
+      <a href="../software/node-red/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software/telegraf/" class="md-nav__link">
+      <a href="../software/telegraf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,8 +909,10 @@
   
 
 
-<h1 id="ac-dc-converter">AC-DC Converter</h1>
-<p>The converter used for 230VAC to 24VDC (to power grow LEDs + ventilation) is <a href="https://www.amazon.de/dp/B09Q93S157?psc=1&amp;ref=ppx_yo2ov_dt_b_product_details">this</a> one from DUSKTEC that has 300W which is enough for lights&amp;co.</p>
+<h1 id="phec-measurement">pH/EC measurement</h1>
+<p>If you choose to grow with (DWC) hydroponics or aeroponics you need to monitor your pH and EC levels. This is crucial for the health of your plants. The pH level of your nutrient solution determines how well your plants can absorb nutrients. The EC level of your nutrient solution determines how much nutrients are available to your plants.</p>
+<p>If you want to get started right away I can recommend you this <a href="https://www.amazon.de/dp/B09VYW337G?ref=ppx_yo2ov_dt_b_product_details&amp;th=1">Multiparameter Tester from Ueomul</a>.
+<img alt="Ueomul Tester" src="../img/phec.jpg" /></p>
 
 
 
@@ -959,10 +959,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
