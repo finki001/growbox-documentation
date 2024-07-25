@@ -1,5 +1,4 @@
 # Overview
-
 This is the collected knowledge for the Lodge 100 3 area grow setup
 
 ## Commands
@@ -13,3 +12,5 @@ This is the collected knowledge for the Lodge 100 3 area grow setup
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+![420blazeit](img/420blazeit.jpeg)
