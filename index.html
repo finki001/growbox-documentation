@@ -774,6 +774,7 @@
 <ul>
 <li><code>docker compose up -d</code> - Serve the project.</li>
 <li><code>docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build</code> - Build the docs.</li>
+<li><code>docker run --rm -it -v ~/.ssh:/root/.ssh:ro -v ~/.ssh/config.docker:/root/.ssh/config:ro -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy</code> - deploy docs to github pages</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
