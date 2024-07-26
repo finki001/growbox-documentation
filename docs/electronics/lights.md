@@ -1,4 +1,4 @@
-# Growlights (206W)
+# Growlights
 The growlights are all LEDs and use 24VDC (except the cutlings light which is 230V).
 Keep in mind that there is a difference between growth and bloom lights - the growth lights are more blueish and the bloom lights are more reddish.
 ![Grow spectrum](../img/grow-spectrum.webp)
