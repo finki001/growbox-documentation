@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://finki001.github.io/growbox-documentation/hydro/</loc>
+         <lastmod>2024-07-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/</loc>
          <lastmod>2024-07-26</lastmod>
          <changefreq>daily</changefreq>
@@ -82,16 +87,6 @@
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/nutrients-and-measurement/additives/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://finki001.github.io/growbox-documentation/plant-setup/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://finki001.github.io/growbox-documentation/plant-setup/hydro/</loc>
          <lastmod>2024-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
