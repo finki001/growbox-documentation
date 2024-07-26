@@ -1,4 +1,26 @@
 # Power consumption
+Peak power consumption is either `167.4W` (grow) or `227.4W` (bloom)
+
+## 60x60 main area (`97.8W / 157.8W`)
+`35W` extractor, `2.8W` monkey fans: `37.8W`
+
+### Growing (`60W`)
+average `40W`. Peak with UV/IR (never on at the same time): `60W`
+
+### Flowering (`120W`)
+average `100W`. Peak with UV/IR (never on at the same time): `120W`
+
+## 60x40 area (`69.6W`)
+`15W` extractor, `2.8W` monkey fans: `17.8W`
+
+### 60x40 mother plant (`21.8W`)
+- `20W` for the growlight
+- `1.8W` for the airstone pump
+
+### 60x40 aero cloner (`30W`)
+`26W` for the growlight, and let's say `4W` for the pump: `30W`
+
+### Monitoring
 I'm using a smart plug that supports measuring the total power consumption of the grow setup and is also Tasmota compatible:
 [Tasmota Steckdose NOUS A1T](https://www.amazon.de/gp/product/B0054PSIPA/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
@@ -21,6 +43,3 @@ An example payload would look like this:
   }
 }
 ```
-
-
-`// TODO: add details how much energy the system consumes in different modes (veg/bloom, aero cloner running or not)`
