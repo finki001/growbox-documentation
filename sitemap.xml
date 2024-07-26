@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://finki001.github.io/growbox-documentation/electronics/esp32-pinout/</loc>
+         <lastmod>2024-07-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/lights/</loc>
          <lastmod>2024-07-26</lastmod>
          <changefreq>daily</changefreq>
