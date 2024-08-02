@@ -466,18 +466,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rule-for-aeroponic-cloner-pump-power1" class="md-nav__link">
+  <a href="#rule-for-aeroponic-cloner-pump-conntcted-to-power1" class="md-nav__link">
     <span class="md-ellipsis">
-      Rule for Aeroponic Cloner Pump (POWER1)
+      Rule for Aeroponic Cloner Pump (conntcted to POWER1)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rule-for-aeroponic-main-setup-pump-power2" class="md-nav__link">
+  <a href="#rule-for-aeroponic-main-setup-pump-conncted-to-power2" class="md-nav__link">
     <span class="md-ellipsis">
-      Rule for Aeroponic Main Setup Pump (POWER2)
+      Rule for Aeroponic Main Setup Pump (conncted to POWER2)
     </span>
   </a>
   
@@ -1053,18 +1053,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rule-for-aeroponic-cloner-pump-power1" class="md-nav__link">
+  <a href="#rule-for-aeroponic-cloner-pump-conntcted-to-power1" class="md-nav__link">
     <span class="md-ellipsis">
-      Rule for Aeroponic Cloner Pump (POWER1)
+      Rule for Aeroponic Cloner Pump (conntcted to POWER1)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rule-for-aeroponic-main-setup-pump-power2" class="md-nav__link">
+  <a href="#rule-for-aeroponic-main-setup-pump-conncted-to-power2" class="md-nav__link">
     <span class="md-ellipsis">
-      Rule for Aeroponic Main Setup Pump (POWER2)
+      Rule for Aeroponic Main Setup Pump (conncted to POWER2)
     </span>
   </a>
   
@@ -1089,17 +1089,17 @@
 
 
 <h1 id="tasmota-pump-rules">Tasmota Pump Rules</h1>
-<p>See <a href="https://tasmota.github.io/docs/Rules/">Tasmota rules documentation</a> for more info (rules can also be set via MQTT).</p>
-<h2 id="rule-for-aeroponic-cloner-pump-power1">Rule for Aeroponic Cloner Pump (POWER1)</h2>
-<ul>
-<li><code>Rule1 ON Power1#Boot DO backlog Power1 ON; RuleTimer1 60 ENDON ON Rules#Timer=1 DO backlog Power1 OFF; RuleTimer2 240 ENDON ON Rules#Timer=2 DO backlog Power1 ON; RuleTimer1 60 ENDON
-Rule1 1</code></li>
-</ul>
-<h2 id="rule-for-aeroponic-main-setup-pump-power2">Rule for Aeroponic Main Setup Pump (POWER2)</h2>
-<ul>
-<li><code>Rule1 ON Power1#Boot DO backlog Power1 ON; RuleTimer1 60 ENDON ON Rules#Timer=1 DO backlog Power1 OFF; RuleTimer2 240 ENDON ON Rules#Timer=2 DO backlog Power1 ON; RuleTimer1 60 ENDON
-Rule1 1</code></li>
-</ul>
+<p>See <a href="https://tasmota.github.io/docs/Rules/">Tasmota rules documentation</a> for more info (rules can also be set via <code>MQTT</code>).</p>
+<h2 id="rule-for-aeroponic-cloner-pump-conntcted-to-power1">Rule for Aeroponic Cloner Pump (conntcted to <code>POWER1</code>)</h2>
+<p>Create Rule 1:</p>
+<p><code>Rule1 ON Power1#Boot DO backlog Power1 ON; RuleTimer1 60 ENDON ON Rules#Timer=1 DO backlog Power1 OFF; RuleTimer2 240 ENDON ON Rules#Timer=2 DO backlog Power1 ON; RuleTimer1 60 ENDON</code></p>
+<p>Enable Rule 1:</p>
+<p><code>Rule1 1</code></p>
+<h2 id="rule-for-aeroponic-main-setup-pump-conncted-to-power2">Rule for Aeroponic Main Setup Pump (conncted to <code>POWER2</code>)</h2>
+<p>Create Rule 2:
+<code>Rule2 ON Power2#Boot DO backlog Power2 ON; RuleTimer3 60 ENDON ON Rules#Timer=3 DO backlog Power2 OFF; RuleTimer4 240 ENDON ON Rules#Timer=4 DO backlog Power2 ON; RuleTimer3 60 ENDON</code></p>
+<p>Enable Rule 2:
+<code>Rule2 1</code></p>
 
 
 
