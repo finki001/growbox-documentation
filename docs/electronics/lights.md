@@ -7,16 +7,16 @@ Keep in mind that there is a difference between growth and bloom lights - the gr
 ## 60x60x160 area (main chamber)
 This is the left area - the main area (basically a DS60 tent)
 
-- 20W IR + 20W UV supplement ([COL20IR + COL20UV](https://www.secretjardin.com/de/cosmorrow-boosters-ir-uv/))
-
+- 40W IR + 40W UV supplement (2x [COL20IR + COL20UV](https://www.secretjardin.com/de/cosmorrow-boosters-ir-uv/))
+<br>(note: UV may be a bit over dimensioned for 60x60 but we'll see)
 ### When in flowering period
-- 5x 20W Cosmorrow Bloom Kit ([COM100FS](https://www.secretjardin.com/de/intensive-blooming/))
+- 100W (5x 20W) Cosmorrow Bloom Kit ([COM100FS](https://www.secretjardin.com/de/intensive-blooming/))
   
 ### When in vegetative period
-- 2x 20W Cosmorrow Grow Kit ([TNO40GR](https://www.secretjardin.com/de/intermediate-growing/))
+- 3x 20W Cosmorrow Grow Kit ([TNO40GR](https://www.secretjardin.com/de/intermediate-growing/))
   
 ## 60x40x100 area (mother plant)
-- 20W Cosmorrow Grow ([COP2065](https://www.secretjardin.com/de/bulbs-power-supplies/))
+- 2x / 3x 20W Cosmorrow Grow ([COP2065](https://www.secretjardin.com/de/bulbs-power-supplies/))
 - 20W Infrared ([COL20IR](https://www.secretjardin.com/de/cosmorrow-boosters-ir-uv/))
   
 ## 60x40x60 area (aeroponic cloner)
