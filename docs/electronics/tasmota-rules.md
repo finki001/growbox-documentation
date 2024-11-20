@@ -46,4 +46,6 @@ This is the rule for the main light turning on at 10:00 and off at 04:00:
 e.g. give UV light at 13:00 and 15:00:
 
 `Rule8 ON Time#Minute=780 DO POWER6 ON ENDON ON Time#Minute=810 DO POWER6 OFF ENDON ON Time#Minute=900 DO POWER6 ON ENDON ON Time#Minute=930 DO POWER6 OFF ENDON`
-And do not forget to enable rules with `Rule[X] 1` e.g. `Rule1 1` for Rule1 (either in the console or via MQTT).
+
+<b>NOTE:</b>
+Do not forget to enable rules with `Rule[X] 1` e.g. `Rule1 1` for Rule1 (either in the console or via MQTT).
