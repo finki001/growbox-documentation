@@ -367,6 +367,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ESP32 pinout
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -376,6 +387,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#my-current-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      My current configuration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1125,6 +1164,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#my-current-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      My current configuration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1142,7 +1198,154 @@
 
 
 <h1 id="esp32-pinout">ESP32 pinout</h1>
-<p><img alt="ESP32" src="../../img/esp32-pinout.png" /></p>
+<p><img alt="ESP32" src="../../img/esp32-pinout.jpg" /></p>
+<h2 id="my-current-configuration">My current configuration</h2>
+<table>
+<thead>
+<tr>
+<th>GPIO</th>
+<th>Purpose</th>
+<th>Currently used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DS18B20 #1</td>
+<td>3x DS18B20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Relay 1</td>
+<td>Cloner Pump</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Relay 6</td>
+<td>40W UV Bloom</td>
+</tr>
+<tr>
+<td>9</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Relay 8</td>
+<td>20W IR Mother Plant</td>
+</tr>
+<tr>
+<td>14</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Relay 9</td>
+<td>26W Cutlings LED</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Relay 4</td>
+<td>100W LED Bloom</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Relay 5</td>
+<td>Mother Plant Fan</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Relay 7</td>
+<td>40W IR Bloom</td>
+</tr>
+<tr>
+<td>19</td>
+<td>I2C SCL #2</td>
+<td>BME280 Mother Plant</td>
+</tr>
+<tr>
+<td>21</td>
+<td>I2C SDA #2</td>
+<td>BME280 Mother Plant</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Relay 2</td>
+<td>60W Mother Plant LED</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Relay 3</td>
+<td>Main Fans (2x Monkey Fan)</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Relay 10</td>
+<td>Main Pump</td>
+</tr>
+<tr>
+<td>26</td>
+<td>I2C SCL #1</td>
+<td>BME280 + MLX90614 main</td>
+</tr>
+<tr>
+<td>27</td>
+<td>I2C SDA #1</td>
+<td>BME280 + MLX90614 main</td>
+</tr>
+<tr>
+<td>32</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>33</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>34</td>
+<td>ADC Input #1</td>
+<td>read analog EC value (legacy)</td>
+</tr>
+<tr>
+<td>35</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>36</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>39</td>
+<td>None</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
 
 
