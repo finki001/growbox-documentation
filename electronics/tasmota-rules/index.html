@@ -530,9 +530,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#current-mother-plant-lighting-ruleset-rule1" class="md-nav__link">
+  <a href="#current-lighting-ruleset-rule1" class="md-nav__link">
     <span class="md-ellipsis">
-      Current Mother Plant Lighting Ruleset (Rule1)
+      Current Lighting Ruleset (Rule1)
     </span>
   </a>
   
@@ -1171,9 +1171,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#current-mother-plant-lighting-ruleset-rule1" class="md-nav__link">
+  <a href="#current-lighting-ruleset-rule1" class="md-nav__link">
     <span class="md-ellipsis">
-      Current Mother Plant Lighting Ruleset (Rule1)
+      Current Lighting Ruleset (Rule1)
     </span>
   </a>
   
@@ -1198,29 +1198,70 @@
 
 
 <h1 id="tasmota-rules">Tasmota Rules</h1>
-<p>See <a href="https://tasmota.github.io/docs/Rules/">Tasmota rules documentation</a> for more info (rules can also be set via <code>MQTT</code>).</p>
-<h2 id="current-mother-plant-lighting-ruleset-rule1">Current Mother Plant Lighting Ruleset (<code>Rule1</code>)</h2>
+<p>See <a href="https://tasmota.github.io/docs/Rules/">Tasmota rules documentation</a> for more info (rules can also be set via
+<code>MQTT</code>).</p>
+<h2 id="current-lighting-ruleset-rule1">Current Lighting Ruleset (<code>Rule1</code>)</h2>
 <pre><code>ON Time#Minute=210 DO POWER8 ON ENDON
+ON Time#Minute=210 DO POWER7 ON ENDON
 ON Time#Minute=220 DO POWER8 OFF ENDON
+ON Time#Minute=220 DO POWER7 OFF ENDON
 ON Time#Minute=230 DO POWER8 ON ENDON
+ON Time#Minute=230 DO POWER7 ON ENDON
 ON Time#Minute=240 DO POWER2 OFF ENDON
+ON Time#Minute=240 DO POWER9 OFF ENDON
+ON Time#Minute=240 DO POWER4 OFF ENDON
 ON Time#Minute=255 DO POWER8 OFF ENDON
+ON Time#Minute=255 DO POWER7 OFF ENDON
 ON Time#Minute=585 DO POWER8 ON ENDON
+ON Time#Minute=585 DO POWER7 ON ENDON
 ON Time#Minute=600 DO POWER8 OFF ENDON
+ON Time#Minute=600 DO POWER7 OFF ENDON
 ON Time#Minute=600 DO POWER2 ON ENDON
+ON Time#Minute=600 DO POWER9 ON ENDON
+ON Time#Minute=600 DO POWER4 ON ENDON
 </code></pre>
-<p>This rule means the following considering POWER8 is the mother plant IR LED and POWER2 is the mother plant Grow LED:
-(<code>Minute=210</code> means: 210 minutes from midnight so for this example 3:30)
-- 3:30: IR ON
-- 3:40: IR OFF
-- 3:50: IR ON
-- 4:00: Grow OFF
-- 4:15: IR OFF
-- 9:45: IR ON
-- 10:00: IR OFF
-- 10:00: Grow ON</p>
-<p>Basically turn the light on at 10:00 and off at 04:00 (so 18h on, 6h off). In addition IR light is supplemented 15min before light turns on and 15min after turned off.
-With an additional 10min IR light half an hour before the grow light turns off (3:30), then off and on again for 10 mins to hepl the plant sleep.</p>
+<table>
+<thead>
+<tr>
+<th>Relay</th>
+<th>Purpose</th>
+<th>Turned on at minute / time</th>
+<th>Turned off at minute / time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POWER2</td>
+<td>Mother Plant Light</td>
+<td>600 / 10:00</td>
+<td>240 / 04:00</td>
+</tr>
+<tr>
+<td>POWER4</td>
+<td>Main Light</td>
+<td>600 / 10:00</td>
+<td>240 / 04:00</td>
+</tr>
+<tr>
+<td>POWER9</td>
+<td>Cutlings Light</td>
+<td>600 / 10:00</td>
+<td>240 / 04:00</td>
+</tr>
+<tr>
+<td>POWER7</td>
+<td>IR Bloom</td>
+<td>210 / 03:30 , 230 / 03:50, 585 / 9:45</td>
+<td>220 / 03: 40, 255 / 04:15, 600 / 10:00</td>
+</tr>
+<tr>
+<td>POWER8</td>
+<td>IR Mother Plant</td>
+<td>585 / 9:45</td>
+<td>240 / 04:00</td>
+</tr>
+</tbody>
+</table>
 
 
 
