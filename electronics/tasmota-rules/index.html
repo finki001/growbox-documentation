@@ -538,6 +538,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#current-pump-ruleset-rule2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Pump Ruleset (Rule2)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1179,6 +1188,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#current-pump-ruleset-rule2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Pump Ruleset (Rule2)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1201,24 +1219,25 @@
 <p>See <a href="https://tasmota.github.io/docs/Rules/">Tasmota rules documentation</a> for more info (rules can also be set via
 <code>MQTT</code>).</p>
 <h2 id="current-lighting-ruleset-rule1">Current Lighting Ruleset (<code>Rule1</code>)</h2>
-<pre><code>ON Time#Minute=210 DO POWER8 ON ENDON
-ON Time#Minute=210 DO POWER7 ON ENDON
-ON Time#Minute=220 DO POWER8 OFF ENDON
-ON Time#Minute=220 DO POWER7 OFF ENDON
-ON Time#Minute=230 DO POWER8 ON ENDON
-ON Time#Minute=230 DO POWER7 ON ENDON
-ON Time#Minute=240 DO POWER2 OFF ENDON
-ON Time#Minute=240 DO POWER9 OFF ENDON
+<pre><code>ON Time#Minute=600 DO POWER4 ON ENDON
 ON Time#Minute=240 DO POWER4 OFF ENDON
-ON Time#Minute=255 DO POWER8 OFF ENDON
+ON Time#Minute=600 DO POWER9 ON ENDON
+ON Time#Minute=240 DO POWER9 OFF ENDON
+ON Time#Minute=585 DO POWER7 ON ENDON
+ON Time#Minute=600 DO POWER7 OFF ENDON
+ON Time#Minute=210 DO POWER7 ON ENDON
+ON Time#Minute=220 DO POWER7 OFF ENDON
+ON Time#Minute=230 DO POWER7 ON ENDON
 ON Time#Minute=255 DO POWER7 OFF ENDON
 ON Time#Minute=585 DO POWER8 ON ENDON
-ON Time#Minute=585 DO POWER7 ON ENDON
 ON Time#Minute=600 DO POWER8 OFF ENDON
-ON Time#Minute=600 DO POWER7 OFF ENDON
-ON Time#Minute=600 DO POWER2 ON ENDON
-ON Time#Minute=600 DO POWER9 ON ENDON
-ON Time#Minute=600 DO POWER4 ON ENDON
+ON Time#Minute=210 DO POWER8 ON ENDON
+ON Time#Minute=220 DO POWER8 OFF ENDON
+ON Time#Minute=230 DO POWER8 ON ENDON
+ON Time#Minute=255 DO POWER8 OFF ENDON
+</code></pre>
+<h2 id="current-pump-ruleset-rule2">Current Pump Ruleset (<code>Rule2</code>)</h2>
+<pre><code>ON POWER10#Boot DO backlog POWER10 ON; RuleTimer1 60 ENDON ON Rules#Timer=1 DO backlog POWER10 OFF; RuleTimer2 240 ENDON ON Rules#Timer=2 DO backlog POWER10 ON; RuleTimer1 60 ENDON
 </code></pre>
 <table>
 <thead>
