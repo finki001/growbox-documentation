@@ -26,26 +26,27 @@ See [Tasmota rules documentation](https://tasmota.github.io/docs/Rules/) for mor
 ## Current Lighting Ruleset (`Rule1`)
 
 ```
-ON Time#Minute=210 DO POWER8 ON ENDON
-ON Time#Minute=210 DO POWER7 ON ENDON
-ON Time#Minute=220 DO POWER8 OFF ENDON
-ON Time#Minute=220 DO POWER7 OFF ENDON
-ON Time#Minute=230 DO POWER8 ON ENDON
-ON Time#Minute=230 DO POWER7 ON ENDON
-ON Time#Minute=240 DO POWER2 OFF ENDON
-ON Time#Minute=240 DO POWER9 OFF ENDON
+ON Time#Minute=600 DO POWER4 ON ENDON
 ON Time#Minute=240 DO POWER4 OFF ENDON
-ON Time#Minute=255 DO POWER8 OFF ENDON
+ON Time#Minute=600 DO POWER9 ON ENDON
+ON Time#Minute=240 DO POWER9 OFF ENDON
+ON Time#Minute=585 DO POWER7 ON ENDON
+ON Time#Minute=600 DO POWER7 OFF ENDON
+ON Time#Minute=210 DO POWER7 ON ENDON
+ON Time#Minute=220 DO POWER7 OFF ENDON
+ON Time#Minute=230 DO POWER7 ON ENDON
 ON Time#Minute=255 DO POWER7 OFF ENDON
 ON Time#Minute=585 DO POWER8 ON ENDON
-ON Time#Minute=585 DO POWER7 ON ENDON
 ON Time#Minute=600 DO POWER8 OFF ENDON
-ON Time#Minute=600 DO POWER7 OFF ENDON
-ON Time#Minute=600 DO POWER2 ON ENDON
-ON Time#Minute=600 DO POWER9 ON ENDON
-ON Time#Minute=600 DO POWER4 ON ENDON
+ON Time#Minute=210 DO POWER8 ON ENDON
+ON Time#Minute=220 DO POWER8 OFF ENDON
+ON Time#Minute=230 DO POWER8 ON ENDON
+ON Time#Minute=255 DO POWER8 OFF ENDON
 ```
-
+## Current Pump Ruleset (`Rule2`)
+```
+ON POWER10#Boot DO backlog POWER10 ON; RuleTimer1 60 ENDON ON Rules#Timer=1 DO backlog POWER10 OFF; RuleTimer2 240 ENDON ON Rules#Timer=2 DO backlog POWER10 ON; RuleTimer1 60 ENDON
+```
 | Relay  | Purpose            | Turned on at minute / time            | Turned off at minute / time            |
 |--------|--------------------|---------------------------------------|----------------------------------------|
 | POWER2 | Mother Plant Light | 600 / 10:00                           | 240 / 04:00                            |
