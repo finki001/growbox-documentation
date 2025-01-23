@@ -14,7 +14,7 @@
 | 12   | None       | -                         |
 | 13   | Relay 8    | 26W Cutlings              |
 | 14   | None       | -                         |
-| 15   | Relay 9    | Main Pump                 |
+| 15   | Relay 9    | Cloner Pump               |
 | 16   | Relay 4    | Main Fans (2x Monkey Fan) |
 | 17   | Relay 5    | 60W Mother Plant          |
 | 18   | Relay 7    | Mother Plant Fan          |
@@ -22,7 +22,7 @@
 | 21   | I2C SDA #2 | BME280 Mother Plant       |
 | 22   | Relay 2    | 40W IR Bloom              |
 | 23   | Relay 3    | 40W UV Bloom              |
-| 25   | Relay 10   | Cloner Pump               |
+| 25   | Relay 10   | Main Pump                 |
 | 26   | I2C SCL #1 | BME280 + MLX90614 main    |
 | 27   | I2C SDA #1 | BME280 + MLX90614 main    |
 | 32   | None       | -                         |
