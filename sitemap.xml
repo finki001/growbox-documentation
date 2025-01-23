@@ -2,127 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://finki001.github.io/growbox-documentation/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/esp32-pinout/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/lights/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/pcb-schematic/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/power-consumption/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/relais-and-switches/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/sensors/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/tasmota-rules/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/wiring/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/actors/pumps/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/actors/ventilation/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/converters/ac-dc/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/electronics/converters/dc-dc/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/grow-knowledge/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/grow-space/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/nutrients-and-measurement/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/nutrients-and-measurement/a-fertilizer/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/nutrients-and-measurement/additives/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/grafana/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/influxdb/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/mosquitto/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/node-red/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://finki001.github.io/growbox-documentation/software/telegraf/</loc>
-         <lastmod>2024-12-28</lastmod>
+         <lastmod>2025-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
