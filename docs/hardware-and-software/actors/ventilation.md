@@ -1,4 +1,4 @@
-# Ventilation (55.7W)
+# Ventilation
 
 ## Extraction
 * [DF16E150 15W](https://www.secretjardin.com/de/air-renewal-extractor/)
