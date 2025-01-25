@@ -8,23 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://finki001.github.io/growbox-documentation/">
+        <link rel="canonical" href="https://finki001.github.io/growbox-documentation/hardware-and-software/docker-setup/grafana/">
       
       
+        <link rel="prev" href="../">
       
-        <link rel="next" href="growtent/">
+      
+        <link rel="next" href="../influxdb/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>Growbox Documentation</title>
+        <title>Grafana - Growbox Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-fellow-grower" class="md-skip">
+        <a href="#grafana" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Growbox Documentation" class="md-header__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
+    <a href="../../.." title="Growbox Documentation" class="md-header__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hello fellow grower! 🌱
+              Grafana
             
           </span>
         </div>
@@ -185,7 +187,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Growbox Documentation" class="md-nav__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
+    <a href="../../.." title="Growbox Documentation" class="md-nav__button md-logo" aria-label="Growbox Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -212,19 +214,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -233,7 +226,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -280,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="growtent/" class="md-nav__link">
+      <a href="../../../growtent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,17 +297,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -329,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Hardware and software
@@ -343,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -364,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/esp32-pinout/" class="md-nav__link">
+      <a href="../../esp32-pinout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -385,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/pcb-schematic/" class="md-nav__link">
+      <a href="../../pcb-schematic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/power-consumption/" class="md-nav__link">
+      <a href="../../power-consumption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -427,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/relais-and-switches/" class="md-nav__link">
+      <a href="../../relais-and-switches/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/sensors/" class="md-nav__link">
+      <a href="../../sensors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/tasmota-rules/" class="md-nav__link">
+      <a href="../../tasmota-rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/wiring/" class="md-nav__link">
+      <a href="../../wiring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/actors/humidifier/" class="md-nav__link">
+      <a href="../../actors/humidifier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/actors/lights/" class="md-nav__link">
+      <a href="../../actors/lights/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/actors/pumps/" class="md-nav__link">
+      <a href="../../actors/pumps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/actors/ventilation/" class="md-nav__link">
+      <a href="../../actors/ventilation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/converters/ac-dc/" class="md-nav__link">
+      <a href="../../converters/ac-dc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/converters/dc-dc/" class="md-nav__link">
+      <a href="../../converters/dc-dc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,17 +714,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
         
           
           <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
@@ -744,7 +740,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_11">
             <span class="md-nav__icon md-icon"></span>
             Docker setup
@@ -758,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,10 +772,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/grafana/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -788,6 +793,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -800,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/influxdb/" class="md-nav__link">
+      <a href="../influxdb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -821,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/mosquitto/" class="md-nav__link">
+      <a href="../mosquitto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -842,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/node-red/" class="md-nav__link">
+      <a href="../node-red/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware-and-software/docker-setup/telegraf/" class="md-nav__link">
+      <a href="../telegraf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,39 +934,9 @@
   
 
 
-<h1 id="hello-fellow-grower">Hello fellow grower! 🌱</h1>
-<p>This is the documentation for my own 3 area growbox project using <a href="https://www.growlocation.de/secret-jardin-lodge-100x60x158-cm">this</a> grow tent which unfortunately is discontinued.
-The controlling of all actors (lights, fans, pumps) and the monitoring via sensors (temperature, humidity, pH, etc.) is done by an ESP32 microcontroller running <a href="https://www.tasmota.info/">Tasmota</a>.</p>
-<figure>
-    <img src="img/lodge100.png"
-         alt="Secret Jardin Lodge 100">
-    <figcaption>Lodge 100 (100cm x 60cm x 160cm)<br><b>LEFT</b> side: 60cm x 60cm main area<br><b>RIGHT</b> side: 60cm x 40cm stacked areas</figcaption>
-</figure>
-
-<h1 id="components">Components</h1>
-<h2 id="always-on">Always on</h2>
-<ul>
-<li>2x extractors + filter (24VDC)</li>
-<li>humidifier with target humidity (for left/right area) (230VAC)</li>
-<li>air stone pump for mother plant (240VAC)</li>
-</ul>
-<h2 id="actors">Actors</h2>
-<ul>
-<li>3 main grow lights (24VDC / 230VAC)</li>
-<li>Infrared supplement for main and mother plant area (24VDC)</li>
-<li>UV supplement for main area (24VDC)</li>
-<li>fans for ventilation - 2 in the main area and 1 for the mother plant (24VDC)</li>
-<li>pumps for main and cloner area (230VAC)</li>
-<li>Atlas Scientific dosing pump for pH regulation (24V, I²C)</li>
-</ul>
-<h2 id="sensors">Sensors</h2>
-<ul>
-<li>BME280 for main and mother plant area (temperature, humidity, pressure) - I²C</li>
-<li>DS18B20 for each of the 3 water temperatures (main, mother plant, cloner) - analog</li>
-<li>MLX90614 for leaf surface temperature (for leaf VPD calculation) - I²C</li>
-<li>Atlas Scientific pH sensor - I²C</li>
-<li>Atlas Scientific EC sensor - I²C</li>
-</ul>
+<h1 id="grafana">Grafana</h1>
+<p>Displays the sensor data
+<img alt="Screenshot" src="../../../img/grafana.png" /></p>
 
 
 
@@ -1007,10 +983,10 @@ The controlling of all actors (lights, fans, pumps) and the monitoring via senso
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
